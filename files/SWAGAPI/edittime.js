@@ -1,10 +1,10 @@
 ﻿function GetPluginSettings()
 {
 	return {
-		"name":			"Addicting Games",
-		"id":			"AddictingGames",
+		"name":			"SWAGAPI",
+		"id":			"SWAGAPI",
 		"version":		"1.0",
-		"description":	"Addicting Games Plugin Created by Kyriakos Farris (OdiusFly Studio) and modified by Rhys Jones.",
+		"description":	"SWAG API Plugin Created by Kyriakos Farris (OdiusFly Studio) and modified by Rhys Jones.",
 		"author":		"Kyriakos Farris",
 		"help url":		"https://odiusfly.com/contact",
 		"contact":		"mailto:odiusfly@hotmail.com",
@@ -57,7 +57,7 @@ function IDEInstance(instance, type)
 	this.type = type;
 
 	this.properties = {};
-	
+
 	for (var i = 0; i < property_list.length; i++)
 		this.properties[property_list[i].name] = property_list[i].initial_value;
 

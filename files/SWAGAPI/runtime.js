@@ -14,7 +14,7 @@ function swag(){
 
 };
 
-cr.plugins_.AddictingGames = function(runtime)
+cr.plugins_.SWAGAPI = function(runtime)
 {
 	this.runtime = runtime;
 };
@@ -22,7 +22,7 @@ cr.plugins_.AddictingGames = function(runtime)
 (function ()
 {
 
-	var pluginProto = cr.plugins_.AddictingGames.prototype;
+	var pluginProto = cr.plugins_.SWAGAPI.prototype;
 
 	pluginProto.Type = function(plugin)
 	{
@@ -137,9 +137,9 @@ cr.plugins_.AddictingGames = function(runtime)
 
 	Acts.prototype.startSession = function (myparam, callback)
 	{
-		
+
 		swag();
-		
+
 		 this.apiInstance = SWAGAPI.getInstance({
 				wrapper: document.getElementById('c2canvasdiv'),
 				api_key: this.properties[0],
@@ -151,7 +151,7 @@ cr.plugins_.AddictingGames = function(runtime)
 		 	.then(function() {
 				if(callback) callback();
 			});
-			
+
 		console.log(this.apiInstance.startSession.name);
 	};
 
@@ -161,7 +161,7 @@ cr.plugins_.AddictingGames = function(runtime)
 			.then(function() {
 				if(callback) callback();
 			});
-			
+
 		console.log(this.apiInstance.startGame.name);
 	};
 	Acts.prototype.endGame = function (myparam, callback)
@@ -170,7 +170,7 @@ cr.plugins_.AddictingGames = function(runtime)
 			.then(function() {
 				if(callback) callback();
 			});
-			
+
 		console.log(this.apiInstance.endGame.name);
 	};
 
