@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<c2addon>
+	<!-- One of: plugin, behavior, effect -->
+	<type>plugin</type>
+	
+	<name>Addicting Games</name>	
+	<version>1.0</version>
+	<author>Kyriakos Farris</author>
+	<website>https://addictinggames.com</website>
+	<documentation>https://odiusfly.com/contact</documentation>
+	<description>Created by Kyriakos Farris (OdiusFly Studio).</description>
+</c2addon>
