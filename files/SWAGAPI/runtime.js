@@ -164,6 +164,7 @@ cr.plugins_.SWAGAPI = function(runtime)
 
 		console.log(this.apiInstance.startGame.name);
 	};
+
 	Acts.prototype.endGame = function (myparam, callback)
 	{
 		this.apiInstance.endGame()
@@ -172,6 +173,21 @@ cr.plugins_.SWAGAPI = function(runtime)
 			});
 
 		console.log(this.apiInstance.endGame.name);
+	};
+
+	Acts.prototype.getBestUserScore = function (myparam, callback)
+	{
+		this.apiInstance.getScores({
+      period: 'alltime',
+      level_key: myparam,
+      current_user: true
+    })
+      .then(function(scores) {
+				console.log(scores);
+        if(callback) callback(scores);
+      });
+
+		console.log(this.apiInstance.getBestUserScore.name);
 	};
 
 	Acts.prototype.Link = function (myparam)
